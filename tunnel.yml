@@ -1,0 +1,6 @@
+tunnel: whatsapp-agent
+credentials-file: /Users/almir.neves/.cloudflared/cert.json
+ingress:
+  - hostname: localhost
+    service: http://localhost:8000
+  - service: http_status:404
